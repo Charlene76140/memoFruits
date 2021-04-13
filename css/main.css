@@ -87,6 +87,87 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* background-color: #E9EB87; */
+    /* color: #7B5E7B; */
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'Pacifico', cursive;
+  }
+
+  .bgColor{ 
+    background-color: #E9EB87;
+    color: #7B5E7B;
+  }
+
+  /*-----------------------Mobile Version----------------------------------------*/
+
+  /*--- header---*/
+  .onlyIpadComputer{
+    display: none;
+  }
+
+  /*----main----*/
+
+  /*----Footer---*/
+
+  .onlyComputer{
+    display: none;
+  }
+
+  .sizeIconsRs i{
+    margin: 2%;
+    font-size: 2.5em;
+  }
+
+
+  /*-----------------------Ipad Version------------------------------------------*/
+  @media screen and (min-width: 768px){
+    /*--- header Ipad---*/
+    .onlyMobile{
+      display: none;
+    }
+    .onlyIpadComputer{
+      display: block;
+    }
+
+    .sizeLogo{
+      width: 15%;
+      margin: auto;
+    }
+
+    /*----main Ipad----*/
+
+    /*----Footer Ipad---*/
+    
+
+  }
+  
+  
+
+  
+
+
+ /*-----------------------Computer Version------------------------------------------*/
+  @media screen and (min-width: 1024px){
+    /*--- header computer---*/
+
+    /*----main computer----*/
+
+    /*----Footer computer---*/
+
+    .onlyComputer{
+      display: block;
+    }
+  }
+  
+
+  
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
