@@ -97,6 +97,11 @@ textarea {
 
   body{
     font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    
   }
 
   .bgColor{ 
@@ -113,6 +118,11 @@ textarea {
 
   /*----main----*/
 
+  .test{
+    width: 5%;
+    background-color: #7B5E7B;
+  }
+
   /*----Footer---*/
 
   .onlyComputer{
@@ -120,7 +130,7 @@ textarea {
   }
 
   .sizeIconsRs i{
-    margin: 2%;
+    margin: 1%;
     font-size: 2.5em;
   }
 
@@ -143,7 +153,10 @@ textarea {
     /*----main Ipad----*/
 
     /*----Footer Ipad---*/
-    
+    .sizeIconsRs i{
+      margin: 1%;
+      font-size: 3.5em;
+    }
 
   }
   
