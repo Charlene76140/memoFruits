@@ -97,16 +97,14 @@ textarea {
 
   body{
     font-family: 'Pacifico', cursive;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    min-height: 100vh;
-    
   }
 
   .bgColor{ 
     background-color: #E9EB87;
     color: #7B5E7B;
+  }
+  main h3{
+    color : #7B5E7B;
   }
 
   /*-----------------------Mobile Version----------------------------------------*/
@@ -115,28 +113,36 @@ textarea {
   .onlyIpadComputer{
     display: none;
   }
+  header h1{
+    margin: 1%;
+  }
 
   /*----main----*/
-
-  .test{
-    width: 5%;
+  .colorCard{
+    height: 8vh;
     background-color: #7B5E7B;
   }
 
   /*----Footer---*/
-
   .onlyComputer{
     display: none;
   }
-
   .sizeIconsRs i{
     margin: 1%;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
 
   /*-----------------------Ipad Version------------------------------------------*/
   @media screen and (min-width: 768px){
+
+    body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
     /*--- header Ipad---*/
     .onlyMobile{
       display: none;
@@ -152,6 +158,10 @@ textarea {
 
     /*----main Ipad----*/
 
+    .colorCard{
+      height: 8vh;
+      background-color: #7B5E7B;
+    }
     /*----Footer Ipad---*/
     .sizeIconsRs i{
       margin: 1%;
@@ -160,16 +170,23 @@ textarea {
 
   }
   
-  
-
-  
-
-
  /*-----------------------Computer Version------------------------------------------*/
   @media screen and (min-width: 1024px){
     /*--- header computer---*/
 
     /*----main computer----*/
+    .colorCard{
+      height: 15vh;
+      background-color: #7B5E7B;
+    }
+
+    .offset-lg-1{
+      margin-left: 4%;
+    }
+
+    .col-lg-1{
+      width : 10%;
+    }
 
     /*----Footer computer---*/
 
@@ -192,6 +209,10 @@ textarea {
 .hidden,
 [hidden] {
   display: none !important;
+}
+
+.notHidden{
+  display: block;
 }
 
 /*
