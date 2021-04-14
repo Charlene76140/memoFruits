@@ -103,7 +103,7 @@ textarea {
     background-color: #E9EB87;
     color: #7B5E7B;
   }
-  main h3{
+  main h2{
     color : #7B5E7B;
   }
 
@@ -118,7 +118,7 @@ textarea {
   }
 
   /*----main----*/
-  .colorCard{
+  .sizeCard{
     height: 8vh;
     background-color: #7B5E7B;
   }
@@ -135,7 +135,6 @@ textarea {
 
   /*-----------------------Ipad Version------------------------------------------*/
   @media screen and (min-width: 768px){
-
     body{
     display: flex;
     justify-content: space-between;
@@ -157,22 +156,27 @@ textarea {
     }
 
     /*----main Ipad----*/
-
-    .colorCard{
-      height: 8vh;
+    .sizeCard{
+      height: 9vh;
       background-color: #7B5E7B;
     }
+
     /*----Footer Ipad---*/
     .sizeIconsRs i{
       margin: 1%;
       font-size: 3.5em;
     }
-
   }
-  
  /*-----------------------Computer Version------------------------------------------*/
   @media screen and (min-width: 1024px){
     /*--- header computer---*/
+    header h1{
+      font-size: 3em;
+    }
+
+    header p{
+      font-size: 1.5em;
+    }
 
     /*----main computer----*/
     .colorCard{
@@ -189,14 +193,10 @@ textarea {
     }
 
     /*----Footer computer---*/
-
     .onlyComputer{
       display: block;
     }
   }
-  
-
-  
 
 /* ==========================================================================
    Helper classes

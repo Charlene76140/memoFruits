@@ -1,4 +1,4 @@
-let cardTest = document.getElementsByClassName("colorCard");
+let cardTest = document.getElementsByClassName("gameCard");
 console.log(cardTest);
 
 let COLORS = ["purple","grey","yellow","black","purple","green","blue","red","green","yellow","blue","red","grey","black"];
@@ -32,6 +32,10 @@ for (let i = 0; i < cardTest.length; i++){
  
 };
 
-   
+
+
+
+
+
 
 
