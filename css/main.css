@@ -108,26 +108,68 @@ textarea {
   }
 
   /*-----------------------Mobile Version----------------------------------------*/
+  body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+    }
 
   /*--- header---*/
   .onlyIpadComputer{
     display: none;
   }
+
   header h1{
     margin: 1%;
+    font-size: 1.8em;
   }
 
-  /*----main----*/
+  /*----main game----*/
   .sizeCard{
     height: 8vh;
     background-color:#7B5E7B;
   }
 
-  
+  .hiddenLayer{
+    margin: 0;
+    padding: 0;
+  }
+
+  .layer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+  }
+
+  /*--- main home---*/
+  main p{
+    color: #7B5E7B;
+    font-size: 1.2em;
+  }
+
+  .sizeButton{
+    background-color: #7B5E7B;
+    color:white;
+  }
+
   /*----Footer---*/
+  .footerMobile{
+    display: block;
+  }
+  
   .onlyComputer{
     display: none;
   }
+
+  .sizeIconsRs{
+    margin-top: 3%;
+  }
+
   .sizeIconsRs i{
     margin: 1%;
     font-size: 2em;
@@ -136,49 +178,56 @@ textarea {
 
   /*-----------------------Ipad Version------------------------------------------*/
   @media screen and (min-width: 768px){
-    body{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    min-height: 100vh;
+    
+    /*--- header Ipad---*/
+    header h1{
+      font-size: 2em;
     }
 
-    /*--- header Ipad---*/
     .onlyMobile{
       display: none;
     }
+
     .onlyIpadComputer{
       display: block;
     }
 
     .sizeLogo{
-      width: 15%;
+      width: 20%;
       margin: auto;
     }
 
-    /*----main Ipad----*/
+    /*----main Ipad game----*/
     .sizeCard{
       height: 9vh;
+    }
+
+    /*----main Ipad home----*/
+
+    main p{
+      font-size: 1.6em;
     }
 
     /*----Footer Ipad---*/
     .sizeIconsRs i{
       margin: 1%;
-      font-size: 3.5em;
+      font-size: 3em;
     }
   }
  /*-----------------------Computer Version------------------------------------------*/
   @media screen and (min-width: 1024px){
-    /*--- header computer---*/
-    header h1{
-      font-size: 3em;
+    /*--- header computer Home ----*/
+    .sizeLogo{
+      width: 10%;
+      margin: auto;
     }
-
+    
+    /*--- header computer Game ----*/
     header p{
       font-size: 1.5em;
     }
 
-    /*----main computer----*/
+    /*----main computer Game----*/
     .colorCard{
       height: 15vh;
       background-color: #7B5E7B;
@@ -193,9 +242,18 @@ textarea {
       height: 15vh;
     }
 
+    /*----main computer Home----*/
+
+
+
     /*----Footer computer---*/
     .onlyComputer{
       display: block;
+      
+    }
+    .sizeIconsRs i{
+      margin: 1%;
+      font-size: 2em;
     }
   }
 
