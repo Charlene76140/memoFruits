@@ -122,7 +122,7 @@ textarea {
 
   header h1{
     margin: 1%;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   /*----main game----*/
@@ -203,9 +203,8 @@ textarea {
     }
 
     /*----main Ipad home----*/
-
     main p{
-      font-size: 1.6em;
+      font-size: 1.4em;
     }
 
     /*----Footer Ipad---*/
@@ -243,8 +242,6 @@ textarea {
     }
 
     /*----main computer Home----*/
-
-
 
     /*----Footer computer---*/
     .onlyComputer{
