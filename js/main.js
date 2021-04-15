@@ -53,7 +53,7 @@ function scoreFinal(){
         alert("c'est gagné");
     }
     
-    else if(score < 0){
+    else if(score <= 0){
         alert("c'est perdu");
     }
 };
