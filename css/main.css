@@ -126,6 +126,10 @@ textarea {
   }
 
   /*----main game----*/
+
+  main h2{
+    font-size: 1em;
+  }
   .sizeCard{
     height: 8vh;
     background-color:#7B5E7B;
@@ -177,7 +181,7 @@ textarea {
 
 
   /*-----------------------Ipad Version------------------------------------------*/
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 576px){
     
     /*--- header Ipad---*/
     header h1{
@@ -198,6 +202,9 @@ textarea {
     }
 
     /*----main Ipad game----*/
+    main h2{
+      font-size: 1.5em;
+    }
     .sizeCard{
       height: 9vh;
     }
@@ -214,7 +221,7 @@ textarea {
     }
   }
  /*-----------------------Computer Version------------------------------------------*/
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 992px){
     /*--- header computer Home ----*/
     .sizeLogo{
       width: 10%;
@@ -227,6 +234,10 @@ textarea {
     }
 
     /*----main computer Game----*/
+    main h2{
+      font-size: 1.8em;
+    }
+
     .colorCard{
       height: 15vh;
       background-color: #7B5E7B;
