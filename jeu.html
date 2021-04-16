@@ -28,25 +28,31 @@
 <body>
   <header class="bgColor">
     <section class="container text-center">
+      <!-- site logo visible only in mobile version -->
       <a href = "index.html"><img class= "onlyMobile" src="logo2.98x98.png" alt="logo du site pour mobile"></a>
+      <!-- site logo visible only in Ipad and Desktop version -->
       <a href = "index.html"><img class= "onlyIpadComputer sizeLogo" src="logo2.144x144.png" alt="logo du site pour PC"></a>
       <h1 class="py-2 py-lg-2">Travaille ta mémoire en t'amusant  <i class="far fa-grin-beam"></i></h1>
+      <!-- rules in the header only in iPad and computer version -->
       <p class= "onlyIpadComputer pb-2">Il te suffit de trouver toutes les paires pour gagner.</p>
     </section>
   </header>
 
+  <!--layer used during the game to avoid repeated clicks-->
   <div id="hiddenLayer">
   </div>
 
   <main>
-    <div class="container-fluid py-3 py-lg-5">
+    <section class="container-fluid py-3 py-lg-5">
+      <!--number of remaining attempts-->
       <h2 class="py-1 py-sm-4 sm-auto">Nombre de tentatives restantes : <em></em></h2>
       <div class="row py-lg-5 " id="containerCard">
-
+        <!--game cards created in JS-->
       </div>
-    </div>
+    </section>
   </main>
 
+  <!--footer present only in iPad and computer version-->
   <footer class="bgColor onlyIpadComputer">
     <section class="container-fluid">
       <div class="row">
@@ -60,8 +66,8 @@
               </p>
             </div>
             <div class="col-12 col-lg-6 text-center py-lg-3">
-              <div class="onlyIpadComputer py-2">Mentions Legales</div>
-              <div class="onlyIpadComputer py-2">Sécurité du site</div>
+              <div class="py-2">Mentions Legales</div>
+              <div class="py-2">Sécurité du site</div>
               <div class="py-2"><small>Copyright © - Avril2021</small></div>
             </div>
           </div>

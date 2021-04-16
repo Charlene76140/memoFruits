@@ -13,7 +13,7 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="logo2.144x144.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" href="favicon2.ico"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,28 +28,31 @@
 <body>
   <header class="bgColor">
     <section class="container text-center">
+      <!-- site logo visible only in mobile version -->
       <img class= "onlyMobile" src="logo2.98x98.png" alt="logo du site pour mobile">
+      <!-- site logo visible only in Ipad and Desktop version -->
       <img class= "onlyIpadComputer sizeLogo" src="logo2.144x144.png" alt="logo du site pour PC">
       <h1 class="py-3 py-lg-2">Travaille ta mémoire en t'amusant  <i class="far fa-grin-beam"></i></h1>
-      <!-- <p class= "onlyIpadComputer pb-2">Il te suffit de trouver toutes les paires pour gagner.</p> -->
     </section>
   </header>
 
   <main>
-    <div class="container-fluid py-5">
+    <section class="container-fluid py-5">
       <div class="d-flex flex-column align-items-center"> 
-      <p class="py-3">Les règles sont simples : trouves toutes les paires et tu as gagné!</p>
-      <a href="jeu.html" class="btn border sizeButton"> Démarrer le jeu</a>
+        <p class="py-3">Les règles sont simples : trouves toutes les paires et tu as gagné!</p>
+        <!-- button to launch the game -->
+        <a href="jeu.html" class="btn border sizeButton"> Démarrer le jeu</a>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="bgColor onlyIpadComputer footerMobile">
+  <footer class="bgColor">
     <section class="container-fluid">
       <div class="row">
         <div class="offset-lg-2 col-lg-5">
           <div class="row">
             <div class="col-12 col-lg-6 text-center">
+              <!-- the social media icons change size depending on the version -->
               <p class=" sizeIconsRs mb-1 py-lg-5">
                 <i class="fab fa-twitter-square"></i>
                 <i class="fab fa-facebook-square"></i>
@@ -57,6 +60,7 @@
               </p>
             </div>
             <div class="col-12 col-lg-6 text-center py-lg-3">
+              <!-- Legal Notice and security visible only in Ipad and Desktop version -->
               <div class="onlyIpadComputer py-2">Mentions Legales</div>
               <div class="onlyIpadComputer py-2">Sécurité du site</div>
               <div class="py-2"><small>Copyright © - Avril2021</small></div>
@@ -64,6 +68,7 @@
           </div>
         </div>
         <div class="col-lg-3 d-flex justify-content-center align-items-center">
+          <!-- site logo visible only in Ipad and Desktop version -->
           <div><img class= "onlyComputer" src="logo80x80.png" alt="logo du site pour PC"></div>
         </div>
       </div>
