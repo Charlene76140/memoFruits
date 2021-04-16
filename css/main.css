@@ -86,9 +86,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-   /* background-color: #E9EB87; */
-    /* color: #7B5E7B; */
+  /* background-color: #E9EB87; */
+  /* color: #7B5E7B; */
   
   *{
     margin: 0;
@@ -103,18 +102,18 @@ textarea {
     background-color: #E9EB87;
     color: #7B5E7B;
   }
+
   main h2{
     color : #7B5E7B;
   }
-
   /*-----------------------Mobile Version----------------------------------------*/
   body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     min-height: 100vh;
-    }
-
+  }
+  
   /*--- header---*/
   .onlyIpadComputer{
     display: none;
@@ -126,7 +125,6 @@ textarea {
   }
 
   /*----main game----*/
-
   main h2{
     font-size: 1em;
   }
@@ -178,14 +176,16 @@ textarea {
     margin: 1%;
     font-size: 2em;
   }
-
-
   /*-----------------------Ipad Version------------------------------------------*/
   @media screen and (min-width: 576px){
     
     /*--- header Ipad---*/
     header h1{
       font-size: 2em;
+    }
+
+    header p{
+      font-size: 1.3em;
     }
 
     .onlyMobile{
@@ -251,9 +251,7 @@ textarea {
       width : 10%;
       height: 15vh;
     }
-
-    /*----main computer Home----*/
-
+    
     /*----Footer computer---*/
     .onlyComputer{
       display: block;
