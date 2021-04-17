@@ -6,6 +6,7 @@ let win = 0;
 let remainingShots = 12;
 let COLORS = ["purple","grey","yellow","orange","purple","green","blue","red","green","yellow","blue","red","grey","orange"];
 let layer = document.getElementById("hiddenLayer");
+let containerCard = document.getElementById("containerCard");
 
 // ----------------------------------My functions----------------------------------------
 //function to mix the colors and launch the makeCard function which creates as many cards as there are colors
@@ -56,7 +57,6 @@ function compareArray(){
         layer.classList.remove("layer"); 
         win ++;
         console.log(win);
-        
     }
     else{
         chosenCard[0].style = "none";
@@ -72,11 +72,11 @@ function compareArray(){
 //function to define the end of the game according to the remaining moves or the cards found
 function scoreFinal(){
     if(win === 7){
-        setTimeout(function(){alert("c'est gagné, Bien joué!");}, 800);
+        setTimeout(function(){alert("Bien joué!\nCliques sur la pomme pour commencer une nouvelle partie");}, 700);
     }
     
     else if(remainingShots <= 0){
-        setTimeout(function(){alert("c'est perdu, dommage");}, 800);
+        setTimeout(function(){alert("Dommage... \nCliques sur la pomme pour commencer une nouvelle partie");}, 700);
     }
 };
 
@@ -84,5 +84,5 @@ function scoreFinal(){
 //displays the number of remaining attempts to the user
 remainingShotsHtml.textContent = remainingShots;
 
-// start game
+//Function to start game
 makeNewGame();
