@@ -1,4 +1,5 @@
 //-----------------------------------Variables---------------------------------------- 
+
 let gameCard = document.getElementsByClassName("gameCard");
 let chosenCard =[];
 let remainingShotsHtml= document.querySelector('em');
@@ -56,7 +57,6 @@ function compareArray(){
     if(chosenCard[0].style.backgroundColor === chosenCard[1].style.backgroundColor){
         layer.classList.remove("layer"); 
         win ++;
-        console.log(win);
     }
     else{
         chosenCard[0].style = "none";

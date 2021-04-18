@@ -148,6 +148,10 @@ textarea {
     z-index:1;
   }
 
+  .gameCard:hover {
+    background-color: #7b5e7bbb
+  }
+  
   /*--- main home---*/
   main p{
     color: #7B5E7B;
