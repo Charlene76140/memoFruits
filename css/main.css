@@ -86,7 +86,186 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  /* background-color: #E9EB87; */
+  /* color: #7B5E7B; */
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
 
+  body{
+    font-family: 'Pacifico', cursive;
+  }
+
+  .bgColor{ 
+    background-color: #E9EB87;
+    color: #7B5E7B;
+  }
+
+  main h2{
+    color : #7B5E7B;
+  }
+  /*-----------------------Mobile Version----------------------------------------*/
+  body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /*--- header---*/
+  .onlyIpadComputer{
+    display: none;
+  }
+
+  header h1{
+    margin: 1%;
+    font-size: 1.5em;
+  }
+
+  /*----main game----*/
+  main h2{
+    font-size: 1em;
+  }
+  .sizeCard{
+    height: 8vh;
+    background-color:#7B5E7B;
+  }
+
+  .hiddenLayer{
+    margin: 0;
+    padding: 0;
+  }
+
+  .layer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+  }
+
+  .gameCard:hover {
+    background-color: #7b5e7bbb
+  }
+  
+  /*--- main home---*/
+  main p{
+    color: #7B5E7B;
+    font-size: 1.2em;
+  }
+
+  .sizeButton{
+    background-color: #7B5E7B;
+    color:white;
+  }
+
+  /*----Footer---*/
+  .footerMobile{
+    display: block;
+  }
+  
+  .onlyComputer{
+    display: none;
+  }
+
+  .sizeIconsRs{
+    margin-top: 3%;
+  }
+
+  .sizeIconsRs i{
+    margin: 1%;
+    font-size: 2em;
+  }
+  /*-----------------------Ipad Version------------------------------------------*/
+  @media screen and (min-width: 576px){
+    
+    /*--- header Ipad---*/
+    header h1{
+      font-size: 2em;
+    }
+
+    header p{
+      font-size: 1.3em;
+    }
+
+    .onlyMobile{
+      display: none;
+    }
+
+    .onlyIpadComputer{
+      display: block;
+    }
+
+    .sizeLogo{
+      width: 20%;
+      margin: auto;
+    }
+
+    /*----main Ipad game----*/
+    main h2{
+      font-size: 1.3em;
+    }
+    .sizeCard{
+      height: 9vh;
+    }
+
+    /*----main Ipad home----*/
+    main p{
+      font-size: 1.4em;
+    }
+
+    /*----Footer Ipad---*/
+    .sizeIconsRs i{
+      margin: 1%;
+      font-size: 3em;
+    }
+  }
+ /*-----------------------Computer Version------------------------------------------*/
+  @media screen and (min-width: 992px){
+    /*--- header computer Home ----*/
+    .sizeLogo{
+      width: 10%;
+      margin: auto;
+    }
+    
+    /*--- header computer Game ----*/
+    header p{
+      font-size: 1.5em;
+    }
+
+    /*----main computer Game----*/
+    main h2{
+      font-size: 1.6em;
+    }
+
+    .colorCard{
+      height: 15vh;
+      background-color: #7B5E7B;
+    }
+
+    .offset-lg-1{
+      margin-left: 4%;
+    }
+
+    .col-lg-1{
+      width : 10%;
+      height: 15vh;
+    }
+    
+    /*----Footer computer---*/
+    .onlyComputer{
+      display: block;
+      
+    }
+    .sizeIconsRs i{
+      margin: 1%;
+      font-size: 2em;
+    }
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -98,6 +277,10 @@ textarea {
 .hidden,
 [hidden] {
   display: none !important;
+}
+
+.notHidden{
+  display: block;
 }
 
 /*
