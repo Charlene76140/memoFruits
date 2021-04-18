@@ -55,12 +55,17 @@ function playGame(){
 //function that compares the two chosen cards
 function compareArray(){
     if(chosenCard[0].style.backgroundColor === chosenCard[1].style.backgroundColor){
+        for(element of chosenCard){
+            element.onclick = function (){return false};
+        }
         layer.classList.remove("layer"); 
         win ++;
+        console.log(win);
     }
     else{
-        chosenCard[0].style = "none";
-        chosenCard[1].style = "none";
+        for(element of chosenCard){
+            element.style = "none";
+        }
         layer.classList.remove("layer");
         remainingShots --;
         remainingShotsHtml.textContent = remainingShots;
