@@ -32,14 +32,14 @@ function makeNewGame(){
 //function to create the game cards on the html side
 function makeCard(){
     let createDiv = document.createElement("div");
-    createDiv.classList.add("gameCard", "col-lg-2", "sizeCard", "colorBackCard", "ms-5", "mb-3");
+    createDiv.classList.add("gameCard", "col-5", "m-1", "m-auto","col-lg-2", "sizeCard", "colorBackCard", "ms-lg-5", "mb-3");
     containerCard.appendChild(createDiv);
 
     let img = document.createElement("img");
     for(let j= 0; j < gameCard.length; j++){
         img.setAttribute("src", "img/" + IMAGES[j]);
         img.setAttribute("alt", "img/" + IMAGES[j]);
-        img.classList.add("hidden", "img", "mt-5", "ms-5");
+        img.classList.add("hidden", "img", "mt-md-5", "ms-md-5");
         gameCard[j].appendChild(img);
     }
     playGame();
