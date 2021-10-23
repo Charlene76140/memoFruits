@@ -6,6 +6,7 @@ let remainingShotsHtml= document.querySelector('em');
 let win = 0;
 let remainingShots = 12;
 let COLORS = ["purple","grey","yellow","orange","purple","green","blue","red","green","yellow","blue","red","grey","orange"];
+let IMAGES = ["banane.PNG", "cerises.PNG", "orange.PNG", "poire.PNG", "raisin.PNG", "banane.PNG", "cerises.PNG", "orange.PNG", "poire.PNG", "raisin.PNG"];
 let layer = document.getElementById("hiddenLayer");
 let containerCard = document.getElementById("containerCard");
 
@@ -21,7 +22,7 @@ function makeShuffleColors(array){
 
 //function which retrieves the array of mixed colors and calls the makeCard function to create as many cards as there are colors
 function makeNewGame(){
-    let colorShuffle = makeShuffleColors(COLORS);
+    let colorShuffle = makeShuffleColors(IMAGES);
     console.log(colorShuffle);
     for(color of colorShuffle){
         makeCard();
@@ -30,9 +31,17 @@ function makeNewGame(){
 
 //function to create the game cards on the html side
 function makeCard(){
-    let createCol = document.createElement("div");
-    createCol.classList.add("offset-2","col-3","offset-lg-1","col-lg-1","my-1","sizeCard","gameCard");
-    containerCard.appendChild(createCol);
+    let createDiv = document.createElement("div");
+    createDiv.classList.add("gameCard", "col-lg-2", "sizeCard", "colorBackCard", "ms-5", "mb-3");
+    containerCard.appendChild(createDiv);
+
+    let img = document.createElement("img");
+    for(let j= 0; j < gameCard.length; j++){
+        img.setAttribute("src", "img/" + IMAGES[j]);
+        img.setAttribute("alt", "img/" + IMAGES[j]);
+        img.classList.add("hidden", "img", "mt-5", "ms-5");
+        gameCard[j].appendChild(img);
+    }
     playGame();
 };
 
@@ -41,12 +50,18 @@ function playGame(){
     for(let i = 0; i < gameCard.length; i++){
         gameCard[i].onclick = function(){
             chosenCard.push(gameCard[i]);
-            gameCard[i].style.backgroundColor = COLORS[i];
-
+            console.log(chosenCard);
+            let img = document.getElementsByClassName("img");
+            console.log(img);
+            img[i].classList.remove("hidden");
+            gameCard[i].classList.remove("colorBackCard");
+            gameCard[i].classList.remove("hover");
+            
             if(chosenCard.length === 2){
                 let layer = document.getElementById("hiddenLayer");
                 layer.classList.add("layer"); 
                 setTimeout(function(){compareArray();}, 1300);   
+                console.log(chosenCard);
             }
         }
     }
@@ -54,7 +69,7 @@ function playGame(){
 
 //function that compares the two chosen cards
 function compareArray(){
-    if(chosenCard[0].style.backgroundColor === chosenCard[1].style.backgroundColor){
+    if(chosenCard[0].firstChild.alt === chosenCard[1].firstChild.alt){
         for(element of chosenCard){
             element.onclick = function (){return false};
         }
@@ -64,7 +79,8 @@ function compareArray(){
     }
     else{
         for(element of chosenCard){
-            element.style = "none";
+            element.classList.add("colorBackCard");
+            element.lastChild.classList.add("hidden");
         }
         layer.classList.remove("layer");
         remainingShots --;
@@ -76,7 +92,7 @@ function compareArray(){
 
 //function to define the end of the game according to the remaining moves or the cards found
 function scoreFinal(){
-    if(win === 7){
+    if(win === 5){
         setTimeout(function(){alert("Bien joué!\nCliques sur la pomme pour commencer une nouvelle partie");}, 700);
     }
     

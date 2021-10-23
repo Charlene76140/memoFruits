@@ -128,10 +128,18 @@ textarea {
   main h2{
     font-size: 1em;
   }
-  .sizeCard{
+  /* .sizeCard{
     height: 8vh;
+  } */
+
+  .colorBackCard{
     background-color:#7B5E7B;
   }
+
+  /* .sizeImage{
+    height: 8vh;
+    width: 8vh;
+  } */
 
   .hiddenLayer{
     margin: 0;
@@ -148,7 +156,7 @@ textarea {
     z-index:1;
   }
 
-  .gameCard:hover {
+  .colorBackCard:hover {
     background-color: #7b5e7bbb
   }
   
@@ -162,6 +170,11 @@ textarea {
     background-color: #7B5E7B;
     color:white;
   }
+
+  /* img{
+    max-width: max-content;
+    max-height: max-content;
+  } */
 
   /*----Footer---*/
   .footerMobile{
@@ -210,7 +223,7 @@ textarea {
       font-size: 1.3em;
     }
     .sizeCard{
-      height: 9vh;
+      height: 200px;
     }
 
     /*----main Ipad home----*/
@@ -242,19 +255,15 @@ textarea {
       font-size: 1.6em;
     }
 
-    .colorCard{
-      height: 15vh;
-      background-color: #7B5E7B;
-    }
 
-    .offset-lg-1{
+    /* .offset-lg-1{
       margin-left: 4%;
-    }
+    } */
 
-    .col-lg-1{
-      width : 10%;
+    /* .col-lg-1{
+      width : 18vh;
       height: 15vh;
-    }
+    } */
     
     /*----Footer computer---*/
     .onlyComputer{
@@ -426,10 +435,10 @@ textarea {
     display: table-header-group;
   }
 
-  tr,
+  /* tr,
   img {
     page-break-inside: avoid;
-  }
+  } */
 
   p,
   h2,
